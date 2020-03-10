@@ -183,10 +183,79 @@ console.log(getStudentNames(students));
    //return holi
 //}
 //console.log (getStudentsNames(students))
+//--------------------------------------------------------------------------------------------------------------------
+
+/*13. Escriba una función que convierta un objeto en una matriz de claves y valores.
+objectToArray({
+  likes: 2,
+  dislikes: 3,
+  followers: 10
+}) ➞ [["likes", 2], ["dislikes", 3], ["followers", 10]]*/
 
 
+let obj4 = {
+    likes: 2,
+    dislikes: 3,
+    followers: 10
+  }
 
-   
+  function objectToArray(obj4) {
+    let final2 = Object.entries(obj4);
+    return final2;
+  }
+
+console.log(objectToArray(obj4));
+
+/*14. Cree una función donde, dado el número n, devuelva la suma de todos los números cuadrados  incluyendo n.
+squaresSum(3) ➞ 14
+// 1² + 2² + 3² =
+// 1 + 4 + 9 =
+// 14*/
+
+let n3 = 3
+
+function squaresSum (n3) {
+    let suma2 = 0
+    for (let i1 = 0; i1 <= n3; i1++) {
+        let i2 = i1**2
+        suma2 = suma2 + i2    
+    }
+    return suma2
+}
+
+console.log(squaresSum(n3));
+
+/* 15. Cree una función para multiplicar todos los valores en una matriz por la cantidad de valores en la matriz dada
+multiplyByLength([2, 3, 1, 0]) ➞ [8, 12, 4, 0]*/
+
+let matriz3 = [2, 3, 1, 0]
+let matrizmult = []
+
+function multiplyByLength(matriz3) {
+    for (let index5 = 0; index5 < matriz3.length; index5++) {
+        let numerodeindex = matriz3[index5]*matriz3.length;
+        matrizmult.push(numerodeindex)     
+    }
+return matrizmult
+}
+console.log(multiplyByLength(matriz3));
+
+/* 16. Cree una función que tome un número como argumento y devuelva una matriz de números contando desde este número a cero.
+countdown(5) ➞ [5, 4, 3, 2, 1, 0]*/
+
+let matrizfinal2 = []
+
+function countdown(n7) {
+    for (let index6 = 0; index6 <= n7; index6++) {
+      let resta1 = n7 - index6 
+       matrizfinal2.push(resta1)   
+    }
+    return matrizfinal2   
+}
+
+console.log (countdown(5));
+
+
 
 
 
