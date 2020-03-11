@@ -255,6 +255,60 @@ function countdown(n7) {
 
 console.log (countdown(5));
 
+/* 17. Cree una función que tome una matriz y devuelva la diferencia entre los números más grandes y más pequeños.
+diffMaxMin([10, 4, 1, 4, -10, -50, 32, 21]) ➞ 82*/
+// Smallest number is -50, biggest is 32.
+
+let matriz5 = [10, 4, 1, 4, -10, -50, 32, 21]
+
+function diffMaxMin(matriz5){
+    let maxmatriz = Math.max.apply(null, matriz5);
+    let minmatriz = Math.min.apply(null, matriz5);
+    return maxmin = maxmatriz - minmatriz;
+}
+console.log(diffMaxMin(matriz5));
+
+/* 18. Cree una función que filtre las cadenas de una matriz y devuelva una nueva matriz que solo contenga enteros.
+filterList([1, 2, 3, "x", "y", 10]) ➞ [1, 2, 3, 10]*/
+
+let matriz6 = [1, 2, 3, "x", "y", 10]
+
+function filterList(){
+    let filtro = matriz6.filter(m => typeof m === 'number');
+    return filtro;
+}
+console.log(filterList(matriz6));
+
+/* 19. Cree una función que tome dos argumentos (elemento, tiempos). El primer argumento (elemento) es el elemento 
+que necesita repetirse, mientras que el segundo argumento (veces) es la cantidad de veces que se debe repetir el elemento. 
+Devuelve el resultado en una matriz.
+repeat(13, 5) ➞ [13, 13, 13, 13, 13] */
+
+function repeat(elementos, tiempos) {
+	let resultado3 = [];
+	for(let i = 0; i < tiempos; i++) {
+  	resultado3.push(elementos)
+  }
+  return resultado3;
+}
+console.log (repeat(13,5))
+
+/*20. Escriba una función, .vreplace () que extienda el prototipo de cadena reemplazando todas las vocales 
+en una cadena con una vocal especificada.
+"apples and bananas".vreplace("u") ➞ "upplus und bununus"*/
+
+let oracion = "apples and bananas"
+
+function vreplace(oracion, x){
+    let reemplazo = oracion.replace(/o|a|e|i|u/g, `${x}`)
+    return reemplazo
+}
+
+console.log(vreplace(oracion,"u"));
+
+
+
+
 
 
 
