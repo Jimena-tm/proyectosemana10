@@ -307,6 +307,26 @@ function vreplace(oracion, x){
 console.log(vreplace(oracion,"u"));
 
 
+/*21. Te dan una cadena de palabras. Debe encontrar la palabra "Nemo" y devolver una cadena como esta: 
+"¡Encontré a Nemo en [el orden de la palabra que encuentra nemo]!".
+findNemo("I am finding Nemo !") ➞ "I found Nemo at 4!"*/
+
+let oracion2 = "I am finding Nemo"
+
+function findNemo(oracion2, x){
+    let posicion = oracion2.split (" ");
+    let posicionfinal = posicion.indexOf(x)+1;
+    return `I found Nemo at ${posicionfinal}`
+
+}
+console.log(findNemo(oracion2, "Nemo"))
+
+/*Cree una función que capitalice la última letra de cada palabra.
+capLast("hello") ➞ "hellO"*/
+
+
+
+
 
 
 
